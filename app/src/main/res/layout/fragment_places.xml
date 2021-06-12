@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    tools:context=".Controller.Fragment.PlacesFragment">
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+<!--    <fragment-->
+<!--        android:id="@+id/mapView"-->
+<!--        android:name="com.google.android.gms.maps.MapFragment"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"/>-->
+
+
+    <TextView
+        android:id="@+id/areaNameField"
+        android:layout_height="40sp"
+        android:textAlignment="gravity"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Search Area"
+        android:layout_width="match_parent" />
+
+    <at.markushi.ui.CircleButton
+        android:id="@+id/searchBtn"
+        style="@style/SearchButton"
+        android:transitionName="parkerImage"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10sp"
+        android:layout_marginEnd="10sp"
+        app:cb_color="@color/colorPrimary"
+        app:cb_pressedRingWidth="2.0dip" />
+
+    <!--<fragment-->
+        <!--android:id="@+id/place_autocomplete_fragment"-->
+        <!--android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+
+</RelativeLayout>

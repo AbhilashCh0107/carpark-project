@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/places_fragment"
+        android:icon="@drawable/icons_places"
+        android:title="Spots"
+        />
+
+    <item
+        android:id="@+id/bookings_fragment"
+        android:icon="@drawable/icon_booking"
+        android:title="Bookings"
+        />
+
+    <item
+        android:id="@+id/wallet_fragment"
+        android:icon="@drawable/icon_wallet"
+        android:title="E-Wallet"
+        />
+
+<!--    <item-->
+<!--        android:id="@+id/offer_place_fragment"-->
+<!--        android:icon="@drawable/icon_offer_parking"-->
+<!--        android:title="Offer Place"-->
+<!--        />-->
+
+<!--    <item-->
+<!--        android:id="@+id/packages_fragment"-->
+<!--        android:icon="@drawable/packages"-->
+<!--        android:title="Packages"-->
+<!--        />-->
+
+</menu>

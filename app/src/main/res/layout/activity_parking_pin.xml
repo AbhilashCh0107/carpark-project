@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controller.Activity.OfferLocation.ParkingPinActivity">
+
+    <include android:id="@+id/action_bar" layout="@layout/top_custom_action_bar" />
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_below="@id/action_bar"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75sp"
+        android:layout_alignParentBottom="true"
+        >
+
+        <at.markushi.ui.CircleButton
+            android:transitionName="circleBtn"
+            android:id="@+id/next_btn"
+            style="@style/NextButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10sp"
+            app:cb_color="@color/colorPrimary"
+            app:cb_pressedRingWidth="2.0dip" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
